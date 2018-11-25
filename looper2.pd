@@ -1,0 +1,22 @@
+#N canvas 1168 158 671 795 10;
+#X obj 202 52 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X msg 202 89 \; pd dsp \$1;
+#X obj 208 71 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 1 256;
+#X text 221 50 Toggle DSP;
+#X obj 42 161 playpause;
+#X obj 41 118 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 67 44 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 92 118 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 39 22 play/pause;
+#X text 28 98 rec 1;
+#X text 84 98 rec 2;
+#X connect 0 0 1 0;
+#X connect 0 0 2 0;
+#X connect 5 0 4 0;
+#X connect 6 0 4 1;
+#X connect 7 0 4 2;
